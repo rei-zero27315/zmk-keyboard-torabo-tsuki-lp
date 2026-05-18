@@ -29,11 +29,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mo 4      &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans                  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &mo 4   &mkp MCLK  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
             >;
         };
 
@@ -43,7 +43,7 @@
 &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans                  &kp COMMA   &kp N7  &kp N8  &kp N9        &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &kp PERIOD  &kp N4  &kp N5  &kp NUMBER_6  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &kp N0      &kp N1  &kp N2  &kp N3        &trans  &trans
-&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans      &trans  &trans  &trans        &trans  &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans  &trans  &mo 5       &trans  &trans  &trans        &trans  &trans
             >;
         };
 
@@ -53,7 +53,7 @@
 &trans  &trans       &trans       &kp HASH       &trans           &trans                  &trans          &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
 &trans  &kp PERCENT  &kp AT_SIGN  &kp QUESTION   &kp EXCLAMATION  &trans  &trans  &trans  &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH  &kp GRAVE
 &trans  &kp DOLLAR   &kp CARET    &kp AMPERSAND  &kp ASTERISK     &trans  &trans  &trans  &kp UNDERSCORE  &kp PLUS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE       &kp TILDE
-&trans  &trans       &trans       &trans         &trans           &trans  &trans  &trans  &trans          &trans     &trans                &trans                 &trans         &trans
+&trans  &trans       &trans       &trans         &trans           &mo 5   &trans  &trans  &trans          &trans     &trans                &trans                 &trans         &trans
             >;
         };
 
@@ -64,6 +64,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp F10  &kp F11  &kp F12  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp F7   &kp F8   &kp F9   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F4   &kp F5   &kp F6   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans   &trans  &trans
             >;
         };
     };
